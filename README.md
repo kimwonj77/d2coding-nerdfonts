@@ -1,2 +1,4 @@
 # d2coding-nerdfonts
-nerd font patched d2coding(s)
+[D2Coding](https://github.com/naver/d2codingfont) 폰트를 받아 github actions에서 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) 패치 (`--complete`, `--also-windows`)를 합니다.
+
+빌드 관련 내용은 `master` branch에서 이루어지며, 배포는 `main` branch에서 이루어집니다.
