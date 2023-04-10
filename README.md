@@ -5,20 +5,21 @@
 
 ## 사용 argument
 ```
---mono 
---complete 
---careful 
---also-windows 
+(--mono)
+--complete
+--also-windows
+--variable-width-glyphs
 --no-progressbars
---fontawesome 
---fontawesomeextension 
---fontlogos 
---octicons 
---codicons 
---powersymbols 
---pomicons 
---powerline 
---powerlineextra 
---material 
+--careful 
+--fontawesome
+--fontawesomeextension
+--fontlogos
+--octicons
+--codicons
+--powersymbols
+--pomicons
+--powerline
+--powerlineextra
+--material
 --weather
 ```
