@@ -21,12 +21,12 @@ jobs:
       run: |
         mkdir font-in
         wget -O font.zip $(cat .font-url)
-        unzip -j -d font-in font.zip
+        unzip -d font-in font.zip
     
-    - name: Run nerd font
+    - name: Run nerd font build
       run: |
-        mkdir font-out
-        docker run --rm -v $(pwd)/font-in:/in -v $(pwd)/font-out:/out nerdfonts/patcher --complete --also-windows --no-progressbars
+        chmod +x build.sh
+        bash build.sh
     
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
@@ -42,7 +42,7 @@ jobs:
       with:
         branch: main # The branch the action should deploy to.
         folder: font-out # The folder the action should deploy.
-        clean: false
+        clean: true
         single-commit: false
         git-config-name: 'github-actions[bot]'
         git-config-email: '41898282+github-actions[bot]@users.noreply.github.com'
