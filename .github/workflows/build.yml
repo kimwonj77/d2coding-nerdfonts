@@ -18,7 +18,7 @@ jobs:
       run: |
         mkdir font-in
         wget -O font.zip $(cat .font-url)
-        unzip -d font-in font.zip
+        unzip -j -d font-in font.zip
     
     - name: Run nerd font
       run: |
