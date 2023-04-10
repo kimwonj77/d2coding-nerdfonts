@@ -34,8 +34,10 @@ jobs:
         name: patched-fonts
         path: font-out
 
-    - name: copy readme
-      run: cp README.md font-out/README.md
+    - name: Copy non-font files
+      run: |
+        cp README.md font-out/README.md
+        cp LICENSE-font font-out/LICENSE
 
     - name: Deploy to main
       uses: JamesIves/github-pages-deploy-action@v4.4.1

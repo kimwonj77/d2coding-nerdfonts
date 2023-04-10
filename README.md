@@ -23,3 +23,9 @@
 --material
 --weather
 ```
+
+## License
+Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding. \
+Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding-Bold.
+
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
