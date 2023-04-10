@@ -23,9 +23,18 @@ jobs:
     - name: Run nerd font
       run: |
         mkdir font-out
-        docker run --rm -v $(pwd)/font-in:/in -v $(pwd)/font-out:/out nerdfonts/patcher --complete --also-windows
+        docker run --rm -v $(pwd)/font-in:/in -v $(pwd)/font-out:/out nerdfonts/patcher --complete --also-windows --no-progressbars
     
-    - name: Deploy
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: patched-fonts
+        path: font-out
+
+    - name: copy readme
+      runs: cp README.md font-out/README.md
+
+    - name: Deploy to main
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         branch: main # The branch the action should deploy to.
