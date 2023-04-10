@@ -32,7 +32,7 @@ jobs:
         path: font-out
 
     - name: copy readme
-      runs: cp README.md font-out/README.md
+      run: cp README.md font-out/README.md
 
     - name: Deploy to main
       uses: JamesIves/github-pages-deploy-action@v4.4.1
