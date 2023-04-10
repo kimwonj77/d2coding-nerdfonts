@@ -23,7 +23,7 @@ jobs:
     - name: Run nerd font
       run: |
         mkdir font-out
-        docker run --rm -v ./font-in:/in -v ./font-out:/out nerdfonts/patcher --complete --also-windows
+        docker run --rm -v $(pwd)/font-in:/in -v $(pwd)/font-out:/out nerdfonts/patcher --complete --also-windows
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.4.1
