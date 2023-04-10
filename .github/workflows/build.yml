@@ -1,0 +1,36 @@
+name: Build and Deploy
+
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Font build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current configuration
+      uses: actions/checkout@v3
+      with:
+        ref: refs/heads/master
+    
+    - name: Download font and unzip
+      run: |
+        mkdir font-in
+        wget -O font.zip $(cat .font-url)
+        unzip -d font-in font.zip
+    
+    - name: Run nerd font
+      run: |
+        mkdir font-out
+        docker run --rm -v font-in:/in -v font-out:/out nerdfonts/patcher --complete --also-windows
+    
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with:
+        branch: main # The branch the action should deploy to.
+        folder: font-out # The folder the action should deploy.
+        clean: false
+        single-commit: false
+        git-config-name: 'github-actions[bot]'
+        git-config-email: '41898282+github-actions[bot]@users.noreply.github.com'
