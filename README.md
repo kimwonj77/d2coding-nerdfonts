@@ -7,21 +7,11 @@
 ```
 (--mono)
 --complete
+--makegroups
+--xavgcharwidth
 --also-windows
---variable-width-glyphs
+--careful
 --no-progressbars
---careful 
---fontawesome
---fontawesomeextension
---fontlogos
---octicons
---codicons
---powersymbols
---pomicons
---powerline
---powerlineextra
---material
---weather
 ```
 
 ## License
