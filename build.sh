@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-args="--complete --also-windows --variable-width-glyphs --no-progressbars --careful  --fontawesome --fontawesomeextension --fontlogos --octicons --codicons --powersymbols --pomicons --powerline --powerlineextra --material --weather"
+args="--complete --makegroups --xavgcharwidth --also-windows --careful --no-progressbars"
 
 mkdir font-out
 
