@@ -5,7 +5,6 @@
 
 ## 사용 argument
 ```
-(--mono)
 --complete
 --makegroups
 --xavgcharwidth
@@ -15,7 +14,15 @@
 ```
 
 ## License
+### D2Coding
 Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding. \
 Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding-Bold.
 
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+
+See also: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+
+### Nerd Fonts
+Please check on nerd-fonts repository. Links:
+- [LICENSE](https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE)
+- [license-audit.md](https://github.com/ryanoasis/nerd-fonts/blob/master/license-audit.md) 
