@@ -8,7 +8,6 @@
 --complete
 --makegroups
 --xavgcharwidth
---also-windows
 --careful
 --no-progressbars
 ```

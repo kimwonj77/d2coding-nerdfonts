@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-args="--complete --makegroups --xavgcharwidth --also-windows --careful --no-progressbars"
+args="--complete --makegroups --xavgcharwidth --careful --no-progressbars"
 
 mkdir font-out
 
