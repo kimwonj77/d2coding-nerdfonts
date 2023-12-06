@@ -1,3 +1,10 @@
+# [NerdFonts](https://github.com/ryanoasis/nerd-fonts) v3.1부터 공식적으로 D2Coding을 지원합니다!
+
+이제 [NerdFonts Repository](https://github.com/ryanoasis/nerd-fonts)에서 받아주시면 됩니다. 
+- 최신 Release 링크: https://github.com/ryanoasis/nerd-fonts/releases/latest
+- NerdFonts PR: https://github.com/ryanoasis/nerd-fonts/pull/1413
+
+
 # d2coding-nerdfonts
 [D2Coding](https://github.com/naver/d2codingfont) 폰트를 받아 github actions에서 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) 패치를 합니다.
 
